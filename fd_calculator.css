@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.bodytext {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 330px;
+    margin-right: 330px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #F5EFFF, #CDC1FF);
+    position: static;
+    z-index: -3;
+}
+
+body {
+    font-family: Montserrat;
+    background: linear-gradient(to right, #6320af, #d4bee4);
+}
+
+.inv-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.inv-div > div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.inv-div h2 {
+    margin-left: 20%;
+}
+
+.inv-div h3 {
+    margin-left: 20%;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    width: 60%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #9b4dca;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:hover {
+    border-color: #ff6a00;
+    background: #fef5e5;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.slider-move {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 2rem -1rem hsla(0, 0%, 0%, 0.25%);
+    border-radius: 7px;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    object-fit: cover;
+}
+
+.button_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(to right, #ff6a00, #ff9900);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background: linear-gradient(to right, #ff9900, #ff6a00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inv-div canvas {
+    max-width: 500px;
+    margin: 20px auto;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Welcome to FD Calculator</h1>
+    <div class="slider-move">
+        <div class="slider">
+            <img src="img1.jpg" alt="Image 1">
+            <img src="img2.jpg" alt="Image 2">
+            <img src="img3.jpg" alt="Image 3">
+        </div>
+    </div>
+    <div class="bodytext">
+        <div class="inv-div">
+            <div><h2>Enter your Invested Amount</h2></div>
+            <div><input type="text" class="invest"></div>
+        </div>
+        <div class="inv-div">
+            <div><h2>Enter your Interest Rate</h2></div>
+            <div><input type="text" class="interest"></div>
+        </div>
+        <div class="inv-div">
+            <div><h2>Enter the Time of Investment</h2></div>
+            <div><input type="text" class="time"></div>
+        </div>
+        <div class="button_div">
+            <button type="button" class="button">Calculate</button>
+        </div>
+        <div class="inv-div">
+            <div><h3>Your Invested Amount is</h3></div>
+            <div><input type="text" class="investedamt" readonly></div>
+        </div>
+        <div class="inv-div">
+            <div><h3>Your Estimated Return is</h3></div>
+            <div><input type="text" class="estdrnt" readonly></div>
+        </div>
+        <div class="inv-div">
+            <div><h3>Your Total Return is</h3></div>
+            <div><input type="text" class="totval" readonly></div>
+        </div>
+        <br><br>
+        <div class="inv-div">
+            <div><h3>Your Investment Breakdown</h3></div>
+            <div><canvas id="investmentChart" width="400" height="400"></canvas></div>
+        </div>
+    </div>
+    <script src="./fd_calculator.js"></script>
+</body>
+<link rel="stylesheet" href="./fd_calculator.css">
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome to Currency Converter</h2>
+        <div class="converter">
+            <div class="select_cur">
+                <h3>Select the currency</h3>
+                <select id="from_currency" class="first_cur_selector">
+                    <option value="Rupee">Rupee</option>
+                    <option value="Dollar">Dollar</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Rubbel">Rubbel</option>
+                    <option value="Pounds">Pounds</option>
+                </select>
+            </div>
+            <div class="input_text">
+                <span>Enter your Amount</span>
+                <input type="text" id="amount_input">
+            </div>
+            <div class="select_cur2">
+                <h3>Select the currency you want to change to</h3>
+                <select id="to_currency">
+                    <option value="Rupee">Rupee</option>
+                    <option value="Dollar">Dollar</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Rubbel">Rubbel</option>
+                    <option value="Pounds">Pounds</option>
+                </select>
+            </div>
+            <div class="button_container">
+                <button class="button convert_button">Convert</button>
+                <button class="button reset">Reset</button>
+            </div>
+            <h3 class="result"></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<link rel="stylesheet" href="./curency_converter.css">
+</html>

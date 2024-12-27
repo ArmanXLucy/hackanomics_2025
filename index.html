@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Devpost</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="paarent">
+        <div class="container" id="main">
+            <div class="sign-up">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class='bx bxl-google'></i></a>
+                        <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="social"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <p>Or use your email for registration</p>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit" class="btn-signup">Sign Up</button>
+                </form>
+            </div>
+            <div class="sign-in">
+                <form action="#">
+                    <h1>Sign In</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class='bx bxl-google'></i></a>
+                        <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="social"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <p>Or use your account</p>
+                    <input type="email" name="email" placeholder="Email" required class="email_class">
+                    <input type="password" name="password" placeholder="Password" required class="pass_class">
+                    <a href="#" class="forgot_pass">Forgot your password?</a>
+                    <button type="submit" class="btn-signin">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us, please login with your personal information.</p>
+                        <button id="signin">Sign In</button>
+                    </div>
+                    <div class="overlay-right">
+                        <h1>Hello, Friend</h1>
+                        <p>Enter your personal details and start your journey with us.</p>
+                        <button id="signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const signupButton = document.getElementById('signup');
+        const signinButton = document.getElementById('signin');
+        const main = document.getElementById('main');
+
+        signupButton.addEventListener('click', () => {
+            main.classList.add("right-panel-active");
+        });
+
+        signinButton.addEventListener('click', () => {
+            main.classList.remove("right-panel-active");
+        });
+
+        document.querySelector('.btn-signin').addEventListener('click', () => {
+            let email = document.querySelector('.email_class').value
+            let password = document.querySelector('.pass_class').value
+            if (email === "rhitam" && password === "abcd") {
+                location.href = "./homepage.html"
+            } else {
+                alert("Wrong password")
+            }
+        })
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
